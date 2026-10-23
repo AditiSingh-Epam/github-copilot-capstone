@@ -1,0 +1,31 @@
+# Local agent audit output
+.github/hooks/tool-use.log
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Build outputs (adjust to the confirmed stack)
+target/
+build/
+out/
+dist/
+node_modules/
+coverage/
+.vite/
+.vitest/
+.nyc_output/
+playwright-report/
+test-results/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Local SQLite task data and transient sidecar files
+*.sqlite*
+*.sqlite3*
+*.db
+*.db-shm
+*.db-wal
